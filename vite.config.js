@@ -8,6 +8,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: `${root}index.html`,
+        aboutUs: `${root}about-us.html`,
+        whyChooseUs: `${root}why-choose-us.html`,
         gallery: `${root}gallery.html`,
         contact: `${root}contact.html`,
       },

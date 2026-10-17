@@ -97,7 +97,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 28px;
+  gap: clamp(12px, 1.5vw, 22px);
   font-weight: 700;
   color: var(--text);
 }
@@ -741,6 +741,12 @@ h3 {
   align-items: center;
 }
 
+.about-intro-copy {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--muted);
+}
+
 .about-copy .point-list {
   gap: 12px;
 }
@@ -797,6 +803,14 @@ h3 {
   object-fit: cover;
   border-radius: 28px;
   box-shadow: var(--shadow);
+}
+
+.about-page-visual {
+  margin-block: 36px;
+}
+
+.about-page-visual img {
+  height: clamp(300px, 50vw, 560px);
 }
 
 .experience-badge {
