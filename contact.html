@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Creation Furniture</title>
+    <meta
+      name="description"
+      content="Contact Creation Furniture about custom sofas, beds, recliners, dining chairs, or furniture repairs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="top">
+    <nav class="announcement-bar" aria-label="Furniture services">
+      <span class="announcement-label">Our Services</span>
+      <a href="index.html#sofas">Sofas</a>
+      <a href="index.html#beds">Beds</a>
+      <a href="index.html#recliners">Recliners</a>
+      <a href="index.html#products">Bed Panels</a>
+      <a href="index.html#products">Dining Chairs</a>
+      <a href="contact.html" aria-current="page">Customise &amp; Repair</a>
+    </nav>
+
+    <header class="site-header">
+      <div class="container header-row">
+        <div class="brand-wrap">
+          <a href="index.html" class="brand-link" aria-label="Creation Furniture home">
+            <img class="brand-logo" src="./creation-furniture-logo.png" alt="" />
+            <span class="brand-name">Creation Furniture</span>
+          </a>
+        </div>
+        <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+          <a href="index.html#about-us">About Us</a>
+          <a href="index.html#products">Products</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+        <button class="menu-button" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation">
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact section">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow eyebrow-dark">Let’s build your perfect furniture</p>
+            <h1>Tell us what you need, and we’ll help you create it.</h1>
+            <p>
+              Whether you need a custom sofa, bed, recliner, dining chair set, or repair work,
+              our team is ready to help bring your vision to life.
+            </p>
+            <div class="contact-blocks">
+              <div>
+                <strong>Email</strong>
+                <span><a href="mailto:syedtaher007@gmail.com">syedtaher007@gmail.com</a></span>
+              </div>
+              <div>
+                <strong>Call or WhatsApp</strong>
+                <span><a href="tel:+919959518962">+91 99595 18962</a></span>
+              </div>
+              <div>
+                <strong>Pickup &amp; delivery</strong>
+                <span>Ask us to confirm delivery coverage and charges for your location.</span>
+              </div>
+              <div>
+                <strong>Address</strong>
+                <span>
+                  Near Kareem Medical, Pernagar, New Hafeezpet, Hyderabad - 500004<br />
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&amp;query=Near%20Kareem%20Medical%2C%20Pernagar%2C%20New%20Hafeezpet%2C%20Hyderabad%20500004"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >View location on Google Maps</a>
+                </span>
+              </div>
+              <div>
+                <strong>Quality</strong>
+                <span>Quality workmanship and lasting comfort. Ask us about product-specific warranty terms.</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <label>
+              Your Name
+              <input type="text" name="name" autocomplete="name" placeholder="Enter your name" required />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" autocomplete="tel" placeholder="Enter your phone number" required />
+            </label>
+            <label>
+              Furniture Requirement
+              <textarea name="requirement" rows="4" placeholder="Tell us what you need" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Enquiry</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link" aria-label="Creation Furniture home">
+            <img class="brand-logo" src="./creation-furniture-logo.png" alt="" />
+            <span class="brand-name">Creation Furniture</span>
+          </a>
+          <p>Creating custom sofas, beds, recliners, dining chairs, panels, and restoration work for everyday living.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about-us">About Us</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="mailto:syedtaher007@gmail.com">syedtaher007@gmail.com</a></li>
+            <li><a href="tel:+919959518962">Call: +91 99595 18962</a></li>
+            <li>Near Kareem Medical, Pernagar, New Hafeezpet, Hyderabad - 500004</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Creation Furniture</p>
+        <p>Designed for modern homes with comfort, character, and craftsmanship.</p>
+      </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
