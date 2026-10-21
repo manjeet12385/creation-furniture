@@ -14,19 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body id="top">
-    <nav class="announcement-bar" aria-label="Furniture services">
-      <span class="announcement-label">Our Services</span>
-      <a href="#sofas">Sofas</a>
-      <a href="#beds">Beds</a>
-      <a href="#recliners">Recliners</a>
-      <a href="#products">Bed Panels</a>
-      <a href="#products">Dining Chairs</a>
-      <a href="contact.html">Customise &amp; Repair</a>
-    </nav>
-
     <header class="site-header">
       <div class="container header-row">
         <div class="brand-wrap">
@@ -37,20 +31,18 @@
         </div>
 
         <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
-          <a href="about-us.html">About Us</a>
-          <a href="why-choose-us.html">Why Choose Us</a>
           <a href="#products">Products</a>
           <a href="gallery.html">Gallery</a>
+          <a href="about-us.html">About Us</a>
           <a href="contact.html">Contact</a>
         </nav>
+
+
+
 
         <button class="menu-button" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation">
           Menu
         </button>
-
-        <div class="header-actions">
-          <button class="icon-button" type="button" aria-label="Search furniture" aria-haspopup="dialog" aria-controls="search-dialog">⌕</button>
-        </div>
       </div>
     </header>
 
@@ -139,6 +131,7 @@
             <button class="tab-btn" id="sofas" type="button" data-category="sofa" aria-pressed="false">Sofas</button>
             <button class="tab-btn" id="beds" type="button" data-category="bed" aria-pressed="false">Beds</button>
             <button class="tab-btn" id="recliners" type="button" data-category="recliner" aria-pressed="false">Recliners</button>
+            <button class="tab-btn" id="chairs" type="button" data-category="chair" aria-pressed="false">Chairs</button>
           </div>
 
           <p class="product-details-note">
@@ -147,6 +140,26 @@
           </p>
           <div class="service-grid"></div>
           <p class="product-status" aria-live="polite"></p>
+
+          <div class="load-more-wrap" id="load-more-wrap">
+            <div class="load-more-status">
+              <span id="load-more-text">Showing 12 designs</span>
+              <div class="load-more-progress-bar">
+                <div class="load-more-progress-fill" id="load-more-progress"></div>
+              </div>
+            </div>
+            <button class="btn-load-more" id="btn-load-more" type="button">
+              <span>Explore More Designs</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="all-loaded-message" id="all-loaded-message" hidden>
+              <span>✨ You've viewed all available designs in this collection!</span>
+              <p>Have a custom design photo from Pinterest or Instagram? We manufacture custom furniture to your exact size &amp; fabric.</p>
+              <a href="https://wa.me/919959518962?text=Hi%20Creation%20Furniture%2C%20I%20have%20a%20custom%20furniture%20design%20photo%20to%20share%20for%20a%20quote." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-inline">
+                <span>Share Photo on WhatsApp</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -159,21 +172,21 @@
 
           <div class="collection-grid">
             <article class="collection-card collection-one">
-              <video class="collection-video" data-video="primary" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+              <video class="collection-video" data-video="0" poster="./image copy 19.webp" autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
               <div>
                 <span>Living Room</span>
                 <h3>Relaxed, refined seating.</h3>
               </div>
             </article>
             <article class="collection-card collection-two">
-              <video class="collection-video" data-video="secondary" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+              <video class="collection-video" data-video="1" poster="./image copy 20.webp" autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
               <div>
                 <span>Bedroom</span>
                 <h3>Restful spaces, perfected.</h3>
               </div>
             </article>
             <article class="collection-card collection-three">
-              <video class="collection-video" data-video="primary" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+              <video class="collection-video" data-video="2" poster="./image copy 68.webp" autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
               <div>
                 <span>Dining</span>
                 <h3>Elegant hosting essentials.</h3>
@@ -182,14 +195,14 @@
           </div>
           <div class="collection-feature-row">
             <article class="collection-card collection-photo">
-              <img class="collection-image" src="./image copy 19.webp" alt="Custom Creation Furniture sofa styled in a living room" />
+              <img class="collection-image" src="./image copy 19.webp" alt="Custom Creation Furniture sofa styled in a living room" loading="lazy" decoding="async" />
               <div>
                 <span>Made for your home</span>
                 <h3>Comfort, crafted around you.</h3>
               </div>
             </article>
             <article class="collection-card collection-feature-video">
-              <video class="collection-video" data-video="secondary" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+              <video class="collection-video" data-video="2" poster="./image copy 68.webp" autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
               <div>
                 <span>See the details</span>
                 <h3>Thoughtful design, made to last.</h3>
@@ -222,6 +235,57 @@
               <h3>Order &amp; Arrange Delivery</h3>
               <p>Once the quote and order details are agreed, coordinate pickup or delivery with our team.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us section section-lighter" id="why-choose-us">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow eyebrow-dark">Direct Hyderabad Workshop</p>
+            <h2>Why Choose Creation Furniture?</h2>
+            <p class="lead" style="max-width: 720px; margin: 12px auto 0;">
+              Over 20+ years of direct manufacturing experience. We craft custom luxury furniture tailored to your exact space, dimensions, and fabric choice at factory-direct pricing.
+            </p>
+          </div>
+
+          <div class="why-us-grid">
+            <div class="why-us-card">
+              <div class="why-us-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <h3>Factory Direct Pricing</h3>
+              <p>Buy directly from our local Hyderabad workshop. No middlemen or showroom markups—just transparent factory pricing.</p>
+            </div>
+
+            <div class="why-us-card">
+              <div class="why-us-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </div>
+              <h3>100% Custom Made</h3>
+              <p>Designed around your room layout. Customize width, depth, cushion firmness, leg finish, and headboard height to your exact taste.</p>
+            </div>
+
+            <div class="why-us-card">
+              <div class="why-us-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <h3>Premium Fabrics &amp; Wood</h3>
+              <p>Choose from over 200+ upholstery fabrics including stain-resistant velvets, rich leatherette, and seasoned solid neem/teak wood framing.</p>
+            </div>
+
+            <div class="why-us-card">
+              <div class="why-us-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3>20+ Years Craftsmanship</h3>
+              <p>Two decades of trusted sofa making, headboard upholstery, and furniture repair across Hyderabad, Kondapur, and Telangana.</p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 40px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+            <a href="why-choose-us.html" class="btn btn-secondary">Read Full Story</a>
+            <a href="https://wa.me/919959518962?text=Hello%20Creation%20Furniture%2C%20I%20want%20to%20discuss%20a%20custom%20order." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get Factory Quote on WhatsApp</a>
           </div>
         </div>
       </section>
@@ -270,7 +334,7 @@
           <ul>
             <li><a href="mailto:syedtaher007@gmail.com">syedtaher007@gmail.com</a></li>
             <li><a href="tel:+919959518962">Call: +91 99595 18962</a></li>
-            <li>Near Kareem Medical, Pernagar, New Hafeezpet, Hyderabad - 500004</li>
+            <li>Premnagar, New Hafeezpet, Kondapur, Hyderabad</li>
           </ul>
         </div>
       </div>
@@ -280,6 +344,72 @@
         <p>Designed for modern homes with comfort, character, and craftsmanship.</p>
       </div>
     </footer>
+
+    <!-- Interactive Quick View Modal (Point 6) -->
+    <dialog id="quick-view-dialog" class="quick-view-modal">
+      <div class="quick-view-card">
+        <button type="button" class="quick-view-close" id="quick-view-close" aria-label="Close dialog">✕</button>
+        <div class="quick-view-grid">
+          <div class="quick-view-image-pane">
+            <img id="quick-view-img" src="" alt="" />
+            <span class="quick-view-badge" id="quick-view-badge">Sofa</span>
+          </div>
+          <div class="quick-view-content">
+            <div class="quick-view-header">
+              <span class="product-tag" id="quick-view-tag">Sofa</span>
+              <h2 id="quick-view-title">Sofa Design 01</h2>
+              <p class="quick-view-subtitle">Handcrafted in Hyderabad • Direct Factory Price</p>
+            </div>
+            
+            <div class="quick-view-specs">
+              <div class="spec-item">
+                <span class="spec-icon">🪵</span>
+                <div>
+                  <strong>Wood Frame</strong>
+                  <p>Seasoned Solid Hardwood / Sal / Marandi</p>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🧵</span>
+                <div>
+                  <strong>Upholstery &amp; Foam</strong>
+                  <p>High-Density 40+ foam • Velvet, Linen, Suede or Leatherette</p>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">📐</span>
+                <div>
+                  <strong>Custom Sizing</strong>
+                  <p>Customizable to exact room dimensions</p>
+                </div>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🛡️</span>
+                <div>
+                  <strong>Quality Assurance</strong>
+                  <p>5-Year frame warranty • Direct workshop pricing</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-view-pricing">
+              <span class="quick-view-price-label">Price Estimate</span>
+              <span class="quick-view-price-value">Direct Workshop Price on Request</span>
+            </div>
+
+            <div class="quick-view-actions">
+              <a id="quick-view-wa-btn" href="" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-quote">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.1 3.9A11.8 11.8 0 0 0 1.5 18.1L0 24l6.1-1.5A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.9-8.1ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.6.9 1-3.5-.3-.4A9.8 9.8 0 1 1 12 21.8Zm5.4-7.3c-.3-.2-1.7-.9-2-.9s-.5-.2-.7.2-.8.9-1 1.1-.3.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.4 0-.5.1-.7l.5-.6.2-.5c.1-.2 0-.4 0-.6l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4a11 11 0 0 0 4.3 4c.6.2 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3s.3-1.2.2-1.3-.2-.2-.5-.4Z"/></svg>
+                <span>Chat on WhatsApp for Price</span>
+              </a>
+              <a id="quick-view-enquire-btn" href="" class="btn btn-secondary-quote">
+                <span>Send Online Enquiry</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
 
     <div class="floating-contact-actions" aria-label="Contact Creation Furniture">
       <a
